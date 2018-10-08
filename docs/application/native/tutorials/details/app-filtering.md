@@ -240,12 +240,6 @@ Reference](../../../../org.tizen.native.mobile.apireference/index.html).
 | `http://tizen.org/feature/opengles.version.3_0` | Specify this key, if the application requires OpenGL&reg; ES version 3.0.You can specify at most 1 OpenGL&reg; ES version. If you specify multiple versions, only the highest one is considered. | 2.4   |
 | `http://tizen.org/feature/opengles.version.3_1` | Specify this key, if the application requires OpenGL&reg; ES version 3.1.You can specify at most 1 OpenGL&reg; ES version. If you specify multiple versions, only the highest one is considered. | 4.0   |
 | `http://tizen.org/feature/opengles.version.3_2` | Specify this key, if the application requires OpenGL&reg; ES version 3.2.You can specify at most 1 OpenGL&reg; ES version. If you specify multiple versions, only the highest one is considered. | 4.0   |
-| `http://tizen.org/feature/peripheral_io.gpio` | Specify this key, if the application requires General-Purpose Input/Output (GPIO) API to communicate with peripheral devices. | 4.0   |
-| `http://tizen.org/feature/peripheral_io.i2c` | Specify this key, if the application requires Inter-Integrated Circuit (I2C) API to communicate with peripheral devices. | 4.0   |
-| `http://tizen.org/feature/peripheral_io.pwm` | Specify this key, if the application requires Pulse-Width Modulation (PWM) API to communicate with peripheral devices. | 4.0   |
-| `http://tizen.org/feature/peripheral_io.adc` | Specify this key, if the application requires Analog-to-Digital Converter (ADC) API to communicate with peripheral devices. | 5.0   |
-| `http://tizen.org/feature/peripheral_io.uart` | Specify this key, if the application requires Universal Asynchronous Receiver-Transmitter (UART) API to communicate with peripheral devices. | 4.0   |
-| `http://tizen.org/feature/peripheral_io.spi` | Specify this key, if the application requires Serial Peripheral Interface (SPI) API to communicate with peripheral devices. | 4.0   |
 | `http://tizen.org/feature/platform.core.cpu.arch.armv7` | Specify this key, if the application requires the ARMv7 CPU architecture. | 2.2.1 |
 | `http://tizen.org/feature/platform.core.cpu.arch.x86` | Specify this key, if the application requires the x86 CPU architecture. | 2.2.1 |
 | `http://tizen.org/feature/platform.core.fpu.arch.sse2` | Specify this key, if the application requires the SSE2 Floating Point Unit (FPU) architecture. | 2.2.1 |
@@ -406,12 +400,6 @@ Reference](../../../../org.tizen.native.mobile.apireference/index.html).
 | `http://tizen.org/feature/opengles.version.1_1` | Specify this key, if the application requires OpenGL&reg; ES version 1.1 at minimum.You can specify at most 1 OpenGL&reg; ES version. If you specify multiple versions, only the highest one is considered. | 2.2.1 |
 | `http://tizen.org/feature/opengles.version.2_0` | Specify this key, if the application requires OpenGL&reg; ES version 2.0.You can specify at most 1 OpenGL&reg; ES version. If you specify multiple versions, only the highest one is considered. | 2.2.1 |
 | `http://tizen.org/feature/opengles.version.3_0` | Specify this key, if the application requires OpenGL&reg; ES version 3.0.You can specify at most 1 OpenGL&reg; ES version. If you specify multiple versions, only the highest one is considered. | 2.4   |
-| `http://tizen.org/feature/peripheral_io.gpio` | Specify this key, if the application requires General-Purpose Input/Output (GPIO) API to communicate with peripheral devices. | 4.0   |
-| `http://tizen.org/feature/peripheral_io.i2c` | Specify this key, if the application requires Inter-Integrated Circuit (I2C) API to communicate with peripheral devices. | 4.0   |
-| `http://tizen.org/feature/peripheral_io.pwm` | Specify this key, if the application requires Pulse-Width Modulation (PWM) API to communicate with peripheral devices. | 4.0   |
-| `http://tizen.org/feature/peripheral_io.adc` | Specify this key, if the application requires Analog-to-Digital Converter (ADC) API to communicate with peripheral devices. | 5.0   |
-| `http://tizen.org/feature/peripheral_io.uart` | Specify this key, if the application requires Universal Asynchronous Receiver-Transmitter (UART) API to communicate with peripheral devices. | 4.0   |
-| `http://tizen.org/feature/peripheral_io.spi` | Specify this key, if the application requires Serial Peripheral Interface (SPI) API to communicate with peripheral devices. | 4.0   |
 | `http://tizen.org/feature/platform.core.cpu.arch.armv7` | Specify this key, if the application requires the ARMv7 CPU architecture. | 2.2.1 |
 | `http://tizen.org/feature/platform.core.cpu.arch.x86` | Specify this key, if the application requires the x86 CPU architecture. | 2.2.1 |
 | `http://tizen.org/feature/platform.core.fpu.arch.sse2` | Specify this key, if the application requires the SSE2 Floating Point Unit (FPU) architecture. | 2.2.1 |
@@ -488,6 +476,19 @@ Reference](../../../../org.tizen.native.mobile.apireference/index.html).
 | `http://tizen.org/feature/vision.qrcode_recognition` | Specify this key, if the application requires the QR code recognition feature. | 2.2.1 |
 | `http://tizen.org/feature/watch_app`     | Specify this key, if the application requires the watch application feature. | 4.0   |
 | `http://tizen.org/feature/multimedia.media_codec`     | Specify this key, if the application requires the media codec feature. | 4.0   |
+
+**Table: Available IoT-only native requirements**
+
+| Feature key                              | Description                              | Since |
+|----------------------------------------|----------------------------------------|-----|
+| `http://tizen.org/feature/device_update` | Specify this key, if the application requires device update API to control the system software update of the device. | 5.0   |
+| `http://tizen.org/feature/peripheral_io.adc` | Specify this key, if the application requires Analog-to-Digital Converter (ADC) API to communicate with peripheral devices. | 5.0   |
+| `http://tizen.org/feature/peripheral_io.gpio` | Specify this key, if the application requires General-Purpose Input/Output (GPIO) API to communicate with peripheral devices. | 4.0   |
+| `http://tizen.org/feature/peripheral_io.i2c` | Specify this key, if the application requires Inter-Integrated Circuit (I2C) API to communicate with peripheral devices. | 4.0   |
+| `http://tizen.org/feature/peripheral_io.pwm` | Specify this key, if the application requires Pulse-Width Modulation (PWM) API to communicate with peripheral devices. | 4.0   |
+| `http://tizen.org/feature/peripheral_io.spi` | Specify this key, if the application requires Serial Peripheral Interface (SPI) API to communicate with peripheral devices. | 4.0   |
+| `http://tizen.org/feature/peripheral_io.uart` | Specify this key, if the application requires Universal Asynchronous Receiver-Transmitter (UART) API to communicate with peripheral devices. | 4.0   |
+| `http://tizen.org/feature/network.zigbee` | Specify this key, if the application requires Zigbee API to control Zigbee end-devices. | 5.0  |
 
 <a name="profile_n"></a>
 ## Profile-based Filtering
